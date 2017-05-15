@@ -1,0 +1,200 @@
+html, body {
+	height: 100%;
+	min-height: 100%;
+	font-size: 1.3vw;
+}
+
+.table-compra {
+  width: 100%;
+  max-width: 100%;
+}
+
+.table-compra > thead > tr > th,
+.table-compra > tbody > tr > th,
+.table-compra > thead > tr > td,
+.table-compra > tbody > tr > td{
+  padding: 0.5vw;
+  line-height: 1.42857143;
+}
+
+.table>tbody>tr>td, 
+.table>tbody>tr>th, 
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td, 
+.table>thead>tr>th 
+{
+	padding: 1vw;
+	vertical-align: middle;
+	font-size: 2vw;
+}
+
+h1, h2, h3{
+	margin-top: 1vw;;
+	margin-bottom: 1vw;
+	text-align: center;
+}
+
+h1{
+       font-size: 3vw;
+}
+
+h2{
+       font-size: 2vw;
+}
+
+h3{
+       font-size: 1.5vw;
+}
+
+.container-compra{
+	display: flex;
+	align-items: stretch;
+}
+
+.main{
+	flex-grow:30;
+}
+
+.sidenav {
+	flex-grow:1;
+    width: 20%;
+    background-color: white;
+    border-right: 3px solid black;
+    margin-right: 1vw;
+}
+
+
+@media screen and (max-width: 720px) {
+	.container-compra{
+		flex-flow: column;
+		margin: 0 auto;
+	}
+	.sidenav{
+		height:30%;
+		width:80%;
+		margin: 0 auto;
+		border-right: none;
+	}
+	
+	.capa{
+		width:30% !important;
+	}
+	
+	.tipoIngresso{
+		width:80%;
+		margin: 0 auto;
+		font-size:1vw
+	}
+	
+	.table-compra{
+		width: 80%;
+		margin: 0 auto;
+	}
+	
+	.input-sm{
+		font-size: 2vw;
+	}
+	select.input-sm{
+		height: 3vw;
+	}
+	
+	.form-control{
+		padding: 0;
+	}
+}
+
+tbody, thead{
+    width: 100%;
+}
+
+.fileira-assentos{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+.fileira-assento{
+	padding-right: 1.5vw;
+}
+
+.fileira-valor{
+	align-self:center;
+}
+
+.fileira-assento input { 
+	display: none; 
+}
+
+#lugares .fileira {
+	display: flex;
+}
+
+figcaption {
+	text-align: center;
+}
+
+.assento {
+	height: 2vw;
+}
+
+.telao{
+	display: flex;
+	width:100%;
+	justify-content: center;
+	padding-bottom: 1.5vw;
+}
+
+#tela{
+	background: black;
+	width:80%;
+	font-size:1.5vw;
+	padding: 0;
+	color: white;
+	text-align: center;
+}
+
+.legenda-menu{
+	border-bottom: 2px solid #ddd;
+}
+
+.disponivel{
+	fill : #0db6b5;
+	color : #0db6b5;
+}
+
+.ocupado{
+	fill : #d5d5d5;
+	color : #d5d5d5;
+}
+
+.escolhido{
+	fill : #d3793d;
+	color : #d3793d;
+}
+.circulo-disponivel{
+	background : #0db6b5;
+}
+
+.circulo-ocupado{
+	background : #d5d5d5;
+}
+
+.circulo-escolhido{
+	background : #d3793d;
+}
+
+.circulo{
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    display: inline-block;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.capa{
+	width: 80%;
+	margin: 0 auto;
+	display: block;
+}
