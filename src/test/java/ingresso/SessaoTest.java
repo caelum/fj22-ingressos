@@ -7,6 +7,7 @@ import java.math.BigDecimal;
 import java.time.Duration;
 import java.time.LocalTime;
 import java.util.Set;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import org.junit.Test;
@@ -29,7 +30,7 @@ public class SessaoTest {
 					Sala	eldorado7	=	new	Sala("Eldorado	7",	new	BigDecimal("8.5"));
 					Sessao	sessao	=	new	Sessao(LocalTime.now(),	rogueOne,	eldorado7);
 					Ingresso ingresso = new	Ingresso(sessao, TipoDeIngresso.INTEIRO,	a1);
-					Set<Ingresso>	ingressos	=	Stream.of(ingresso).collect(toSet());
+					Set<Ingresso>	ingressos	=	Stream.of(ingresso).collect(Collectors.toSet());
 					sessao.setIngressos(ingressos);
 					assertFalse(sessao.isDisponivel(a1));
 					assertTrue(sessao.isDisponivel(a2));
