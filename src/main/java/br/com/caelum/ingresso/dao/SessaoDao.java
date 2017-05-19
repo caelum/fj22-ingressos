@@ -1,5 +1,10 @@
 package br.com.caelum.ingresso.dao;
 
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
 //import br.com.caelum.ingresso.model.Sala;
 //import br.com.caelum.ingresso.model.Sessao;
 import org.springframework.stereotype.Repository;
@@ -7,10 +12,6 @@ import org.springframework.stereotype.Repository;
 import br.com.caelum.ingresso.model.Filme;
 import br.com.caelum.ingresso.model.Sala;
 import br.com.caelum.ingresso.model.Sessao;
-
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
-import java.util.List;
 
 /**
  * Created by nando on 03/03/17.
@@ -34,5 +35,10 @@ public class SessaoDao {
 		return	manager.createQuery("select	s from	Sessao s where s.filme	= :filme",	Sessao.class)
 										.setParameter("filme", filme)
 										.getResultList();
-}
+	}
+	
+	public	Sessao	findOne(Integer	id)	{
+		return	manager.find(Sessao.class,	id);
+	}
+	
 }

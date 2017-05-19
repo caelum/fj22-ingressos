@@ -3,11 +3,17 @@ package br.com.caelum.ingresso.model;
 import java.math.BigDecimal;
 import java.time.LocalTime;
 import java.time.temporal.ChronoUnit;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Sessao {
@@ -15,7 +21,6 @@ public class Sessao {
 	@Id
 	@GeneratedValue
 	private Integer id;
-
 	private LocalTime horario;
 
 	@ManyToOne
@@ -24,6 +29,9 @@ public class Sessao {
 	@ManyToOne
 	private Filme filme;
 
+	@OneToMany(mappedBy	=	"sessao",	fetch	=	FetchType.EAGER)
+	private	Set<Ingresso>	ingressos	=	new	HashSet<>();
+	
 	/**
 	*	@deprecated	hibernate	only
 	*/
@@ -39,6 +47,14 @@ public class Sessao {
 		this.preco = sala.getPreco().add(filme.getPreco());
 	}
 
+	public	Map<String,	List<Lugar>>	getMapaDeLugares(){
+		return	sala.getMapaDeLugares();
+	}
+	
+	public	boolean	isDisponivel(Lugar	lugar)	{
+		return	ingressos.stream().map(Ingresso::getLugar).noneMatch(l	->	l.equals(lugar));
+	}
+	
 	public BigDecimal getPreco() {
 		return preco;
 	}
@@ -77,6 +93,18 @@ public class Sessao {
 
 	public LocalTime getHorarioTermino() {
 		return this.horario.plus(filme.getDuracao().toMinutes(), ChronoUnit.MINUTES);
+	}
+
+	public Set<Ingresso> getIngressos() {
+		return ingressos;
+	}
+
+	public void setIngressos(Set<Ingresso> ingressos) {
+		this.ingressos = ingressos;
+	}
+
+	public void setPreco(BigDecimal preco) {
+		this.preco = preco;
 	}
 
 }
