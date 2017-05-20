@@ -15,6 +15,7 @@
                 <th>Nome</th>
                 <th>Filme</th>
                 <th>Duração</th>
+                <th>Preço</th>
                 <th colspan="2" class="text-center">Ações</th>
             </tr>
             </thead>
@@ -24,6 +25,7 @@
                     <td>${sessao.horario}</td>
                     <td>${sessao.filme.nome}</td>
                     <td>${sessao.filme.duracao.toMinutes()}</td>
+                    <td>${sessao.preco}</td>
                     <td>
                         <a onclick="excluir(${sessao.id})" class="btn btn-danger">Excluir</a>
                     </td>

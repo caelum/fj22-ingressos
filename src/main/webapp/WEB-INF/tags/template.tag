@@ -27,13 +27,15 @@
 			</div>
 
 
-			<div class="collapse navbar-collapse"
-				id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav navbar-right">
 
 
-					<li><a href="/filmes">Filmes</a></li>
-					<li><a href="/salas">Salas</a></li>
+					<div	class="collapse	navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul	class="nav	navbar-nav	navbar-right">
+									<li><a	href="/filmes">Filmes</a></li>
+									<li><a	href="/salas">Salas</a></li>
+									<li><a	href="/filme/em-cartaz">Comprar</a></li>																
+					</ul>
+					</div>
 
 
 					<sec:authorize access="!isAuthenticated()">
