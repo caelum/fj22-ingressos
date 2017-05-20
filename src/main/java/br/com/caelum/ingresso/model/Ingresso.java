@@ -11,32 +11,32 @@ import javax.persistence.ManyToOne;
 
 @Entity
 public class Ingresso {
-	
+
 	@Id
 	@GeneratedValue
-	private	Integer	id;
-	
+	private Integer id;
+
 	@ManyToOne
-	private	Sessao	sessao;
-	
+	private Sessao sessao;
+
 	@ManyToOne
-	private	Lugar	lugar;
-	
-	private	BigDecimal	preco;
+	private Lugar lugar;
+
+	private BigDecimal preco;
 
 	@Enumerated(EnumType.STRING)
-	private	TipoDeIngresso	tipoDeIngresso;
-	
+	private TipoDeIngresso tipoDeIngresso;
+
 	@Deprecated
 	public Ingresso() {
 		// TODO Auto-generated constructor stub
 	}
-	
-	public	Ingresso(Sessao	sessao,	TipoDeIngresso	tipoDeDesconto,	Lugar lugar)	{
-		this.sessao	=	sessao;
-		this.tipoDeIngresso	=	tipoDeDesconto;
-		this.preco	=	this.tipoDeIngresso.aplicaDesconto(sessao.getPreco());
-		this.lugar	=	lugar;
+
+	public Ingresso(Sessao sessao, TipoDeIngresso tipoDeDesconto, Lugar lugar) {
+		this.sessao = sessao;
+		this.tipoDeIngresso = tipoDeDesconto;
+		this.preco = this.tipoDeIngresso.aplicaDesconto(sessao.getPreco());
+		this.lugar = lugar;
 	}
 
 	public Sessao getSessao() {
@@ -45,6 +45,10 @@ public class Ingresso {
 
 	public BigDecimal getPreco() {
 		return preco;
+	}
+
+	public BigDecimal getPrecoComDesconto() {
+		return tipoDeIngresso.aplicaDesconto(preco);
 	}
 
 	public Lugar getLugar() {
@@ -78,6 +82,5 @@ public class Ingresso {
 	public void setTipoDeIngresso(TipoDeIngresso tipoDeIngresso) {
 		this.tipoDeIngresso = tipoDeIngresso;
 	}
-	
-	
+
 }

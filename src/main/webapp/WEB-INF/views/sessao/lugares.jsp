@@ -65,8 +65,8 @@ isDisponivel(lugar)	?	'changeCheckbox(this)'	:	''	}"	id="${lugar.id}"	version="1
 												c1.681-2.082,4.185-3.272,6.854-3.272h155.634c2.67,0,5.174,1.19,6.854,3.272c1.688,2.075,2.338,4.773,1.785,7.394l-8.397,39.591
 											c-0.858,4.053-4.496,7-8.639,7H89.678C85.534,269.772,81.896,266.825,81.039,262.772z"/>
 										</svg>
-										<input type="checkbox" value="${info.lugar.id}" >
-									    <figcaption>${info.lugar.posicao}</figcaption>
+										<input type="checkbox" value="${lugar.id}" >
+									    <figcaption>${lugar.posicao}</figcaption>
 									</figure></td>
 								</c:forEach>
 								</tr>

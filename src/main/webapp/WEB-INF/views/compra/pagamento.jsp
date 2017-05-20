@@ -1,11 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-         pageEncoding="UTF-8" %>
-<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
-<%@ taglib tagdir="/WEB-INF/tags/" prefix="ingresso" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ taglib tagdir="/WEB-INF/tags/" prefix="ingresso"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <ingresso:template>
-    <jsp:body>
+	<jsp:body>
    		<div class=" col-md-6 col-md-offset-3">
         <form action="/compra/comprar" method="post">
             <table class="table table-hover ">
@@ -19,11 +19,18 @@
                 </thead>
 
                 <tbody>
-                <c:forEach items="${carrinho.ingressos}" var="ingresso" varStatus="status">
+                <c:forEach items="${carrinho.ingressos}" var="ingresso"
+							varStatus="status">
 
-                    <input type="hidden" name="ingressos[${status.index}].sessao.id" value="${ingresso.sessao.id}">
-                    <input type="hidden" name="ingressos[${status.index}].lugar.id" value="${ingresso.lugar.id}">
-                    <input type="hidden" name="ingressos[${status.index}].tipoDeIngresso" value="${ingresso.tipoDeIngresso}">
+                    <input type="hidden"
+								name="ingressos[${status.index}].sessao.id"
+								value="${ingresso.sessao.id}">
+                    <input type="hidden"
+								name="ingressos[${status.index}].lugar.id"
+								value="${ingresso.lugar.id}">
+                    <input type="hidden"
+								name="ingressos[${status.index}].tipoDeIngresso"
+								value="${ingresso.tipoDeIngresso}">
                     <tr>
                         <td>${ingresso.sessao.sala.nome}</td>
                         <td>${ingresso.lugar.fileira}${ingresso.lugar.posicao}</td>
@@ -45,19 +52,22 @@
             <div class="form-group">
                 <div class="col-md-6">
                     <label for="nome">Nome:</label>
-                    <input id="nome" type="text" name="nome" class="form-control">
+                    <input id="nome" type="text" name="nome"
+							class="form-control">
                 </div>
 
                 <div class="col-md-6">
                     <label for="sobrenome">Sobrenome:</label>
-                    <input id="sobrenome" type="text" name="sobrenome" class="form-control">
+                    <input id="sobrenome" type="text" name="sobrenome"
+							class="form-control">
                 </div>
             </div>
 
             <div class="form-group">
                 <div class="col-md-6">
                     <label for="cpf">CPF:</label>
-                    <input id="cpf" type="text" name="cpf" class="form-control">
+                    <input id="cpf" type="text" name="cpf"
+							class="form-control">
                 </div>
             </div>
 
@@ -65,21 +75,31 @@
             <div class="form-group">
                 <div class="col-md-8">
                     <label for="cartaoDeCredito">Cartão de Crédito:</label>
-                    <input id="cartaoDeCredito" type="text" name="cartaoDeCredito" class="form-control">
+                    <input id="cartaoDeCredito" type="text"
+							name="cartaoDeCredito" class="form-control">
                 </div>
 
                 <div class="col-md-4">
                     <label for="cvv">CVV:</label>
-                    <input id="cvv" type="text" name="cvv" class="form-control">
+                    <input id="cvv" type="text" name="cvv"
+							class="form-control">
                 </div>
             </div>
-
+			<div class="form-group">
+				<div class="col-md-6">
+								<label for="vencimento">Vencimento:</label>
+								<input id="vencimento" type="text" name="vencimento"
+							class="form-control">
+				</div>
+			</div>
+			
 
             <div class="form-group">
                 <div class="col-md-12">
                     <button type="submit" class="btn btn-primary">Comprar</button>
                 </div>
             </div>
+            
 
         </form>
 		</div>

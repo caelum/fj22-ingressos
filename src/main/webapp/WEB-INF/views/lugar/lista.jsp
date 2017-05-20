@@ -19,8 +19,8 @@
 							<tr>
 							<c:forEach var="lugar" items="${map.value}">
 								<td class="fileira-assento"><figure>
-										<svg class="assento" version="1.0" id="SEAT" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-												 viewBox="0 0 318.224 305.246" enable-background="new 0 0 318.224 305.246" xml:space="preserve" width="20">
+										<svg class="assento	${sessao.isDisponivel(lugar)	&&	!carrinho.isSelecionado(lugar)	?	"disponivel"	:	"ocupado"	}"	 version="1.0" id="SEAT" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+											onclick="${sessao.isDisponivel(lugar)	&&	!carrinho.isSelecionado(lugar)	?	'changeCheckbox(this)'	:	''	}"	 viewBox="0 0 318.224 305.246" enable-background="new 0 0 318.224 305.246" xml:space="preserve" width="20">
 											<g id="FILL">
 												<path d="M269.395,132.246h-15.02V51.414c0-11.758-9.492-21.248-21.248-21.248H85.097
 													c-11.757,0-21.248,9.49-21.248,21.248v80.833H48.827c-8.535,0-15.127,7.505-14.024,15.971l11.406,87.625
