@@ -3,7 +3,6 @@
 <%@attribute name="compra_css" fragment="true" %>
 <%@taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
