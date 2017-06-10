@@ -17,6 +17,16 @@ public class Filme {
     private String nome;
     private Duration duracao;
     private String genero;
+    
+    
+    
+    /**
+     * @deprecated hibernate only
+     */
+    public Filme() {
+
+    }
+    
     public Integer getId() {
         return id;
     }
