@@ -36,7 +36,7 @@
 							<td class="fileira-assentos">
 							<table>
 								<tr>
-								<c:forEach var="info" items="${map.value}">
+								<c:forEach var="lugar" items="${map.value}">
 									<td class="fileira-assento"><figure>
 										<svg class="assento ${info.isOcupado() ? "ocupado" :  "disponivel"}" id="${info.lugar.id}" onclick="${info.isOcupado() ? ''  : 'changeCheckbox(this)'}" version="1.0" id="SEAT" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 												 viewBox="0 0 318.224 305.246" enable-background="new 0 0 318.224 305.246" xml:space="preserve">
