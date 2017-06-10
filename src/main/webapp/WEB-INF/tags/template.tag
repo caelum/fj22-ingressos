@@ -34,7 +34,7 @@
 
 					<li><a href="/filmes">Filmes</a></li>
 					<li><a href="/salas">Salas</a></li>
-
+					<li><a href="/filme/em-cartaz">Comprar</a></li>	
 
 					<sec:authorize access="!isAuthenticated()">
 						<li><a href="/login">Login</a></li>
@@ -56,6 +56,7 @@
 			</div>
 
 		</div>
+		
 	</nav>
 
 	<jsp:doBody/>

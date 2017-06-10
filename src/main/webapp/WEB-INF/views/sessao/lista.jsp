@@ -38,7 +38,7 @@
         </div>
 		</div>
         <script>
-            function excluir(id) {
+            function excluir(sala, id) {
                 var url = window.location.href;
                 $.ajax({
                     url:"/sessao/" + id,
