@@ -22,6 +22,15 @@
 
             </div>
 
+         
+<!--              <div class="form-group"> -->
+<!--                 <label for="preco">Preço:</label> -->
+<!--                 <input id="preco" type="text" name="preco" -->
+<%-- 						class="form-control" value="${sala.preco}" /> --%>
+<%--                 <c:forEach items="${bindingResult.getFieldErrors('preco')}" var="error"> --%>
+<%-- 					<span class="text-danger">${error.defaultMessage}</span> --%>
+<%-- 				</c:forEach> --%>
+<!--             </div> -->
             <button type="submit" class="btn btn-primary">Gravar</button>
         </form>
         </div>
