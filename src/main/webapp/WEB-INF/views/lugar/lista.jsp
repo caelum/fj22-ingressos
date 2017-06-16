@@ -54,7 +54,7 @@
 			</tbody>
 		</table>
 		<div class="col-md-6 col-md-offset-3">
-			<a href="/lugar?salaId=${sala.id}" class="btn btn-block btn-info">Novo</a>
+			<a href="/admin/lugar?salaId=${sala.id}" class="btn btn-block btn-info">Novo</a>
 		</div>
 		</div>
 	</jsp:body>

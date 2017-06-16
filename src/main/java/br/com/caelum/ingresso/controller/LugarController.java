@@ -28,7 +28,7 @@ public class LugarController {
     @Autowired
     private LugarDao lugarDao;
 
-    @GetMapping("/lugar")
+    @GetMapping("/admin/lugar")
     public ModelAndView form(@RequestParam("salaId") Integer salaId, LugarForm lugarDto) {
 
         lugarDto.setSalaId(salaId);
@@ -42,7 +42,7 @@ public class LugarController {
 
 
 
-    @PostMapping("/lugar")
+    @PostMapping("/admin/lugar")
     @Transactional
     public ModelAndView salva(@Valid LugarForm lugarDto, BindingResult result) {
 
@@ -58,7 +58,7 @@ public class LugarController {
 
         salaDao.save(sala);
 
-        return new ModelAndView("redirect:/sala/"+salaId+"/lugares/");
+        return new ModelAndView("redirect:/admin/sala/"+salaId+"/lugares/");
     }
 
 }
