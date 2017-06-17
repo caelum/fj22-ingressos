@@ -36,14 +36,14 @@
             </tbody>
         </table>
         <div class="col-md-6 col-md-offset-3">
-            <a href="/sessao?salaId=${sala.id}" class="btn btn-block btn-info">Nova</a>
+            <a href="/admin/sessao?salaId=${sala.id}" class="btn btn-block btn-info">Nova</a>
         </div>
 		</div>
         <script>
             function excluir(id) {
                 var url = window.location.href;
                 $.ajax({
-                    url:"/sessao/" + id,
+                    url:"/admin/sessao/" + id,
                     type: 'DELETE',
                     success: function (result) {
                         console.log(result);
