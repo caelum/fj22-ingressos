@@ -32,17 +32,12 @@
 				<ul class="nav navbar-nav navbar-right">
 
 
-					<li><a href="/filmes">Filmes</a></li>
-					<li><a href="/salas">Salas</a></li>
+					<li><a href="/admin/filmes">Filmes</a></li>
+					<li><a href="/admin/salas">Salas</a></li>
 					<li><a href="/filme/em-cartaz">Comprar</a></li>	
 
 					<sec:authorize access="!isAuthenticated()">
 						<li><a href="/login">Login</a></li>
-					</sec:authorize>
-
-
-					<sec:authorize access="isAnonymous() Or hasRole('COMPRADOR')">
-						<li><a href="/compra">Comprar</a></li>
 					</sec:authorize>
 
 					<sec:authorize access="hasRole('COMPRADOR')">

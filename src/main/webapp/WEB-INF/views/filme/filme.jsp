@@ -10,7 +10,7 @@
         <c:set var="bindingResult"
 				value="${requestScope['org.springframework.validation.BindingResult.filme']}" />
 
-        <form action='/filme' method="post">
+        <form action='/admin/filme' method="post">
             <input type="hidden" name="id" value="${filme.id}">
 
             <div class="form-group">

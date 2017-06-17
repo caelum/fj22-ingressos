@@ -30,7 +30,7 @@ public class SalaController {
     @Autowired
     private SessaoDao sessaoDao;
 
-    @GetMapping({"/sala", "/sala/{id}"})
+    @GetMapping({"/admin/sala", "/admin/sala/{id}"})
     public ModelAndView form(@PathVariable("id")Optional<Integer> id, Sala sala){
         ModelAndView modelAndView = new ModelAndView("sala/sala");
 
@@ -44,7 +44,7 @@ public class SalaController {
     }
 
 
-    @PostMapping("/sala")
+    @PostMapping("/admin/sala")
     @Transactional
     public ModelAndView salva(@Valid Sala sala, BindingResult result){
 
@@ -56,7 +56,7 @@ public class SalaController {
         return new ModelAndView("redirect:/salas");
     }
 
-    @GetMapping("/salas")
+    @GetMapping("/admin/salas")
     public ModelAndView lista(){
         ModelAndView modelAndView = new ModelAndView("sala/lista");
 
@@ -66,7 +66,7 @@ public class SalaController {
     }
 
 
-    @GetMapping("/sala/{id}/sessoes")
+    @GetMapping("/admin/sala/{id}/sessoes")
     public ModelAndView listaSessoes(@PathVariable("id") Integer id) {
 
         Sala sala = salaDao.findOne(id);
@@ -78,7 +78,7 @@ public class SalaController {
         return view;
     }
 
-    @GetMapping("/sala/{id}/lugares/")
+    @GetMapping("/admin/sala/{id}/lugares/")
     public ModelAndView listaLugares(@PathVariable("id") Integer id) {
 
         ModelAndView modelAndView = new ModelAndView("lugar/lista");
@@ -90,7 +90,7 @@ public class SalaController {
     }
 
 
-    @DeleteMapping("/sala/{id}")
+    @DeleteMapping("/admin/sala/{id}")
     @ResponseBody
     @Transactional
     public void delete(@PathVariable("id") Integer id){
