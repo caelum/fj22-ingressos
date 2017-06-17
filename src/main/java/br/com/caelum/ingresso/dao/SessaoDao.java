@@ -17,10 +17,11 @@ public class SessaoDao {
 	@PersistenceContext
 	private EntityManager manager;
 
-    public Sessao findOne(Integer id) {
-        return manager.find(Sessao.class, id);
-    }
-	
+	public Sessao findOne(Integer id) {
+		return manager.createQuery("Select distinct s from Sessao s where id = :id", Sessao.class)
+				.setParameter("id", id).getSingleResult();
+	}
+
 	public void save(Sessao sessao) {
 		manager.persist(sessao);
 	}
@@ -35,9 +36,9 @@ public class SessaoDao {
 		return manager.createQuery("select s from Sessao s where s.filme = :filme", Sessao.class)
 				.setParameter("filme", filme).getResultList();
 	}
-	
-    public void delete(Integer id) {
-        manager.remove(findOne(id));
-    }
+
+	public void delete(Integer id) {
+		manager.remove(findOne(id));
+	}
 
 }
