@@ -37,7 +37,7 @@ public class Sessao {
 	@OneToMany(mappedBy = "sessao", fetch = FetchType.EAGER)
 	private Set<Ingresso> ingressos = new HashSet<>();
 
-	protected Sessao() {
+	public Sessao() {
 	}
 
 	public Sessao(LocalTime horario, Filme filme, Sala sala) {
