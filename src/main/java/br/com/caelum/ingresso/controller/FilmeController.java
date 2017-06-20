@@ -48,13 +48,13 @@ public class FilmeController {
 
         filmeDao.save(filme);
 
-        ModelAndView view = new ModelAndView("redirect:/filmes");
+        ModelAndView view = new ModelAndView("redirect:/admin/filmes");
 
         return view;
     }
 
 
-    @GetMapping(value="/filmes")
+    @GetMapping(value="/admin/filmes")
     public ModelAndView lista(){
 
         ModelAndView modelAndView = new ModelAndView("filme/lista");

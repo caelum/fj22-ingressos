@@ -17,12 +17,12 @@
                 <tr>
                     <td class="text-center">${sala.nome}</td>
                     <td class="col-md-1">
-                        <a href="/sala/${sala.id}/sessoes/" class="btn btn-primary">
+                        <a href="/admin/sala/${sala.id}/sessoes/" class="btn btn-primary">
                             <span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> Sessões
                         </a>
                     </td>
                     <td class="col-md-1">
-                        <a href="/sala/${sala.id}/lugares/" class="btn btn-warning">
+                        <a href="/admin//sala/${sala.id}/lugares/" class="btn btn-warning">
                             <span class="glyphicon glyphicon-th" aria-hidden="true"></span> Lugares
                         </a>
                     </td>
