@@ -47,7 +47,7 @@ public class SalaController {
         }
 
         salaDao.save(sala);
-        return new ModelAndView("redirect:/salas");
+        return new ModelAndView("redirect:/admin/salas");
     }
 
     @GetMapping("/admin/salas")
