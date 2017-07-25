@@ -61,7 +61,7 @@
 								<td>${sessao.sala.nome}</td>
 								<td>${sessao.horario}</td>
 								<td>
-									<a href="/sessao/${sessao.id}/lugares" class="btn">
+									<a href="/admin/sessao/${sessao.id}/lugares" class="btn">
 										Comprar
 										<span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span>
 									</a>
