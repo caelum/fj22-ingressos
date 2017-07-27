@@ -27,7 +27,13 @@ public class Filme {
 
     }
     
-    public Integer getId() {
+    public Filme(String nome, Duration duracao, String genero) {
+		this.nome = nome;
+		this.duracao = duracao;
+		this.genero = genero;
+	}
+
+	public Integer getId() {
         return id;
     }
 
