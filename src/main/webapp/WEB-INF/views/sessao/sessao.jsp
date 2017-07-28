@@ -7,7 +7,7 @@
 <ingresso:template>
     <jsp:body>
 		<div class=" col-md-6 col-md-offset-3">
-        <c:set var="bindingResult" value="${requestScope['org.springframework.validation.BindingResult.form']}"/>
+        <c:set var="bindingResult" value="${requestScope['org.springframework.validation.BindingResult.sessaoForm']}"/>
 
         <h3>Nova sessão para sala: ${sala.nome}</h3>
 
