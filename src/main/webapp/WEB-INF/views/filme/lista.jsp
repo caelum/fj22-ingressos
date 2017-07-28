@@ -13,7 +13,7 @@
 				<tr>
 					<th>Nome</th>
 					<th>Duração</th>
-					<!-- <th>Preço</t -->
+					<!-- <th>Preço</th> -->
 					<th colspan="2" class="text-center">Ações</th>
 				</tr>
 			</thead>
