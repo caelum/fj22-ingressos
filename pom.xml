@@ -150,5 +150,11 @@
             </plugin>
         </plugins>
     </build>
+    <developers>
+    	<developer>
+    		<name>James McCormack</name>
+    		<email>njmccormack@gmail.com</email>
+    	</developer>
+    </developers>
 
 </project>
