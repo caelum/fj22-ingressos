@@ -7,7 +7,7 @@ pageEncoding="UTF-8" %>
 <ingresso:template>
     <jsp:body>
     	<div class=" col-md-6 col-md-offset-3">
-        	<h3 class="text-center">Bem-vindo Ingresso!</h3>
+        	<h3 class="text-center">Bem-vindo Mestre!</h3>
         </div>
     </jsp:body>
 </ingresso:template>
