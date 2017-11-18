@@ -123,6 +123,12 @@
             <artifactId>javax.mail</artifactId>
             <version>1.5.6</version>
         </dependency>
+        
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+        </dependency>
 
     </dependencies>
     <build>
@@ -150,5 +156,11 @@
             </plugin>
         </plugins>
     </build>
+    <developers>
+    	<developer>
+    		<name>James McCormack</name>
+    		<email>njmccormack@gmail.com</email>
+    	</developer>
+    </developers>
 
 </project>
