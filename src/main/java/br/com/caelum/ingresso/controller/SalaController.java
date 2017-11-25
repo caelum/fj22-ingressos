@@ -21,6 +21,7 @@ public class SalaController {
 
     @Autowired
     private SalaDao salaDao;
+    @Autowired
     private SessaoDao sessaoDao;
 
 

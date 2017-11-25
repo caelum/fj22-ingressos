@@ -9,6 +9,7 @@ import org.junit.Test;
 import junit.framework.Assert;
 
 public class SessaoTest {
+	@SuppressWarnings("deprecation")
 	@Test
 	public void oPrecoDaSessaoDeveSerIgualASomaDoPrecoDaSalaMaisOPrecoDoFilme(){
 		Sala sala = new Sala("Eldorado - IMax", new BigDecimal("22.5"));

@@ -17,6 +17,16 @@ public class Ingresso {
 		this.sessao = sessao;
 		this.preco = tipoDeDesconto.aplicarDescontoSobre(sessao.getPreco());
 	}
+
+	public Sessao getSessao() {
+		return sessao;
+	}
+
+	public BigDecimal getPreco() {
+		return preco;
+	}
+
+
 	
 
 }
