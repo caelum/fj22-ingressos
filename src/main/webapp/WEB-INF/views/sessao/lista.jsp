@@ -12,7 +12,7 @@
         <table class="table table-hover ">
             <thead>
             <tr>
-                <th>Nome</th>
+                <th>Horário</th>
                 <th>Filme</th>
                 <th>Duração</th>
  <!--                 <th>Preço</th> -->

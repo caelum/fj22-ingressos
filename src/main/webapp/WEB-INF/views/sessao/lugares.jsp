@@ -64,7 +64,7 @@
 											c-0.858,4.053-4.496,7-8.639,7H89.678C85.534,269.772,81.896,266.825,81.039,262.772z"/>
 										</svg>
 										<input type="checkbox" value="${lugar.id}" >
-									    <figcaption>${info.lugar.posicao}</figcaption>
+									    <figcaption>${lugar.posicao}</figcaption>
 									</figure></td>
 								</c:forEach>
 								</tr>
