@@ -149,5 +149,21 @@
             </plugin>
         </plugins>
     </build>
+    <developers>
+    	<developer>
+    		
+    		<name> Claudio Domingues</name>
+    		<email>claudio.domingues68@hotmail.com</email>
+    	
+    	</developer>
+    </developers>
 
 </project>
+
+
+
+
+
+
+
+
