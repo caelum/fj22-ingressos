@@ -20,7 +20,7 @@ public class Sala {
     private String nome;
 
     @OneToMany(fetch = FetchType.EAGER)
-    private List<Lugar> lugares = new ArrayList<>();
+    private Set<Lugar> lugares = new HashSet<>();
 
     /**
      * @deprecated hibernate only
@@ -54,11 +54,11 @@ public class Sala {
         this.lugares.add(lugar);
     }
 
-    public List<Lugar> getLugares() {
+    public Set<Lugar> getLugares() {
         return lugares;
     }
 
-    public void setLugares(List<Lugar> lugares) {
+    public void setLugares(Set<Lugar> lugares) {
         this.lugares = lugares;
     }
 
