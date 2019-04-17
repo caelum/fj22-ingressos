@@ -10,7 +10,7 @@ import br.com.caelum.ingresso.model.Lugar;
 import br.com.caelum.ingresso.model.Sala;
 
 public class SalaForm {
-    private Integer id;
+    private Integer salaId;
 
     @NotBlank
     private String nome;
@@ -21,17 +21,17 @@ public class SalaForm {
     }
 
     public SalaForm(Sala sala) {
-        this.id = sala.getId();
+        this.salaId = sala.getId();
         this.nome = sala.getNome();
         this.lugares = new ArrayList<>(sala.getLugares());
     }
 
-    public Integer getId() {
-        return id;
+    public Integer getSalaId() {
+        return salaId;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setSalaId(Integer salaId) {
+        this.salaId = salaId;
     }
 
     public String getNome() {
@@ -52,7 +52,7 @@ public class SalaForm {
 
     public Sala toSala() {
         Sala sala = new Sala(this.nome);
-        sala.setId(this.id);
+        sala.setId(this.salaId);
         sala.setLugares(new HashSet<>(this.lugares));
         return sala;
     }

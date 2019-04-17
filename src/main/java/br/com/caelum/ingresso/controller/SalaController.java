@@ -27,29 +27,22 @@ public class SalaController {
     @GetMapping({"/admin/sala", "/admin/sala/{id}"})
     public ModelAndView form(@PathVariable("id") Optional<Integer> id, SalaForm salaForm) {
         ModelAndView modelAndView = new ModelAndView("sala/sala");
-
         if (id.isPresent()){
             Sala sala = salaDao.findOne(id.get());
-            if (salaForm.getNome() == null) {
-                salaForm = new SalaForm(sala);
-            }
+            salaForm = new SalaForm(sala);
         }
-
         modelAndView.addObject("salaForm", salaForm);
 
         return modelAndView;
     }
 
 
-
-
     @PostMapping("/admin/sala")
     @Transactional
     public ModelAndView salva(@Valid SalaForm salaForm, BindingResult result) {
-
         Sala sala = salaForm.toSala();
         if (result.hasErrors()){
-            return form(Optional.ofNullable(sala.getId()), salaForm);
+            return form(Optional.empty(), salaForm);
         }
         System.out.println(sala.getLugares().size());
         salaDao.save(sala);

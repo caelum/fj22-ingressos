@@ -11,7 +11,7 @@
 
         <form action='/admin/sala' method="post">
             <div class="form-group">
-                <input type="hidden" name="id" value="${salaForm.id}">
+                <input type="hidden" name="salaId" value="${salaForm.salaId}">
                 <c:forEach items="${salaForm.lugares}" var="lugar" varStatus="status">
                     <input type="hidden" name="lugares[${status.index}].id" value="${lugar.id}">
                 </c:forEach>
