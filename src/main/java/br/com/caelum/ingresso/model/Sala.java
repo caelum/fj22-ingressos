@@ -16,7 +16,6 @@ public class Sala {
     @GeneratedValue
     private Integer id;
 
-    @NotBlank
     private String nome;
 
     @OneToMany(fetch = FetchType.EAGER)
@@ -25,6 +24,7 @@ public class Sala {
     /**
      * @deprecated hibernate only
      */
+    @Deprecated
     public Sala() {
 
     }
