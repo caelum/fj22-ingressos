@@ -1,7 +1,5 @@
 package br.com.caelum.ingresso.model;
 
-import org.hibernate.validator.constraints.NotBlank;
-
 import javax.persistence.*;
 import java.util.*;
 import java.util.stream.Collectors;
@@ -16,7 +14,6 @@ public class Sala {
     @GeneratedValue
     private Integer id;
 
-    @NotBlank
     private String nome;
 
     @OneToMany(fetch = FetchType.EAGER)
@@ -25,6 +22,7 @@ public class Sala {
     /**
      * @deprecated hibernate only
      */
+    @Deprecated
     public Sala() {
 
     }

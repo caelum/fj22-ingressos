@@ -2,6 +2,8 @@ package br.com.caelum.ingresso.controller;
 
 import br.com.caelum.ingresso.dao.SalaDao;
 import br.com.caelum.ingresso.model.Sala;
+import br.com.caelum.ingresso.model.form.SalaForm;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
@@ -23,29 +25,26 @@ public class SalaController {
 
 
     @GetMapping({"/admin/sala", "/admin/sala/{id}"})
-    public ModelAndView form(@PathVariable("id")Optional<Integer> id, Sala sala){
+    public ModelAndView form(@PathVariable("id") Optional<Integer> id, SalaForm salaForm) {
         ModelAndView modelAndView = new ModelAndView("sala/sala");
-
         if (id.isPresent()){
-            sala = salaDao.findOne(id.get());
+            Sala sala = salaDao.findOne(id.get());
+            salaForm = new SalaForm(sala);
         }
-
-        modelAndView.addObject("sala", sala);
+        modelAndView.addObject("salaForm", salaForm);
 
         return modelAndView;
     }
 
 
-
-
     @PostMapping("/admin/sala")
     @Transactional
-    public ModelAndView salva(@Valid Sala sala, BindingResult result){
-
+    public ModelAndView salva(@Valid SalaForm salaForm, BindingResult result) {
+        Sala sala = salaForm.toSala();
         if (result.hasErrors()){
-            return form(Optional.ofNullable(sala.getId()) ,sala);
+            return form(Optional.empty(), salaForm);
         }
-
+        System.out.println(sala.getLugares().size());
         salaDao.save(sala);
         return new ModelAndView("redirect:/admin/salas");
     }

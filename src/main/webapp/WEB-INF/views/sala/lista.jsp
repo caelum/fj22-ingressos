@@ -24,7 +24,7 @@
                         </a>
                     </td>
                     <td class="col-md-1">
-                        <a href="/admin//sala/${sala.id}/lugares/" class="btn btn-warning">
+                        <a href="/admin/sala/${sala.id}/lugares/" class="btn btn-warning">
                             <span class="glyphicon glyphicon-th" aria-hidden="true"></span> Lugares
                         </a>
                     </td>
