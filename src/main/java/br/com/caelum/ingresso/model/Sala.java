@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 public class Sala {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
 
     private String nome;
@@ -22,7 +22,6 @@ public class Sala {
     /**
      * @deprecated hibernate only
      */
-    @Deprecated
     public Sala() {
 
     }
