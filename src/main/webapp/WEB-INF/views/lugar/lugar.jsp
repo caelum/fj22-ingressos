@@ -7,7 +7,6 @@
 	<jsp:body>
 		<div class=" col-md-6 col-md-offset-3">
 		<form action="/admin/lugar" method="post">
-			<input type="hidden" name="id" value="${lugarDto.id}">
 			<input type="hidden" name="salaId" value="${lugarDto.salaId}">
 
 			<div class="form-group">

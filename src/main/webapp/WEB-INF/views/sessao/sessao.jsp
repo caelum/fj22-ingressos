@@ -12,7 +12,6 @@
         <h3>Nova sessão para sala: ${sala.nome}</h3>
 
         <form action='/admin/sessao' method="post">
-            <input type="hidden" name="id" value="${form.id}">
             <input type="hidden" name="salaId" value="${form.salaId}">
 
             <div class="form-group">
