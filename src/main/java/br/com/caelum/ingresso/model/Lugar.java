@@ -96,4 +96,9 @@ public class Lugar {
         return true;
     }
 
+    @Override
+    public String toString() {
+        return this.fileira + this.posicao;
+    }
+
 }
