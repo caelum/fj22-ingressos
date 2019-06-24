@@ -4,6 +4,7 @@ import org.hibernate.validator.constraints.NotBlank;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 
@@ -14,7 +15,7 @@ import javax.validation.constraints.NotNull;
 public class Lugar {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     @NotBlank
@@ -93,6 +94,11 @@ public class Lugar {
         } else if (!posicao.equals(other.posicao))
             return false;
         return true;
+    }
+
+    @Override
+    public String toString() {
+        return this.fileira + this.posicao;
     }
 
 }
