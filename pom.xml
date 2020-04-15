@@ -150,4 +150,11 @@
         </plugins>
     </build>
 
+    <developers>
+        <developer>
+            <name>Alefh Sous</name>
+            <email>alefh.sousa@caelum.com.br</email>
+        </developer>
+    </developers>
+
 </project>
