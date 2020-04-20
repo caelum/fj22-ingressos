@@ -90,8 +90,8 @@ public class GerenciadorDeSessao {
 		
 		
 		LocalDateTime inicioSessaoNova = getInicioSessaoComDiaDeHoje(sessao);
-		System.out.println("Estou getInicioSessaoComDiaDeHoje -- inicioSessaoNova --" +inicioSessaoNova);
-		System.out.println("Estou getInicioSessaoComDiaDeHoje -- inicioSessaoNova.plus(sessao.getFilme().getDuracao()) --" +inicioSessaoNova.plus(sessao.getFilme().getDuracao()));
+		System.out.println("Estou getTerminoSessaoComDiaDeHoje -- inicioSessaoNova --" +inicioSessaoNova);
+		System.out.println("Estou getTerminoSessaoComDiaDeHoje -- inicioSessaoNova.plus(sessao.getFilme().getDuracao()) --" +inicioSessaoNova.plus(sessao.getFilme().getDuracao()));
 
 		return inicioSessaoNova.plus(sessao.getFilme().getDuracao());
 		
