@@ -26,8 +26,6 @@ public class SessaoForm {
 	private Integer filmeId;
 	
 	
-	
-
 	public Integer getSalaId() {
 		return salaId;
 	}
