@@ -18,7 +18,7 @@ import java.util.Optional;
  * Created by nando on 03/03/17.
  */
 @Controller
-public class SalaController {
+public class SalaController{
 
     @Autowired
     private SalaDao salaDao;
@@ -48,7 +48,6 @@ public class SalaController {
         salaDao.save(sala);
         return new ModelAndView("redirect:/admin/salas");
     }
-
     @GetMapping("/admin/salas")
     public ModelAndView lista(){
         ModelAndView modelAndView = new ModelAndView("sala/lista");
