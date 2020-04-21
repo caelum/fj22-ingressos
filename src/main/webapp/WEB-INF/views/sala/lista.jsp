@@ -8,16 +8,17 @@
 		<div class=" col-md-6 col-md-offset-3">
         <table class="table table-hover ">
             <thead>
-            <tr>
-                <th class="text-center">Nome</th>
-	       <!-- <th class="text-center">Preço</th>	  -->
-                <th colspan="4" class="text-center">Ações</th>
+            	<tr>
+	                <th class="text-center">Nome</th>
+		     		<th class="text-center">Preço</th>	 
+	                <th colspan="4" class="text-center">Ações</th>
+              	</tr>
             </thead>
             <tbody>
             <c:forEach var="sala" items="${salas}">
                 <tr>
                     <td class="text-center">${sala.nome}</td>
-		 <%--   <td class="text-center">${sala.preco}</td> --%>
+		   <td class="text-center">${sala.preco}</td>
                     <td class="col-md-1">
                         <a href="/admin/sala/${sala.id}/sessoes/" class="btn btn-primary">
                             <span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> Sessões
