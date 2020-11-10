@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?metadataRepository version='1.2.0'?>
+<repository name='update site: http://www.apache.org/dist/geronimo/eclipse/updates/' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1'>
+  <properties size='3'>
+    <property name='p2.timestamp' value='1603800051473'/>
+    <property name='site.checksum' value='3198277949'/>
+    <property name='p2.mirrorsURL' value='http://geronimo.apache.org/devtools/geronimo-eclipse-update--xml.cgi'/>
+  </properties>
+</repository>

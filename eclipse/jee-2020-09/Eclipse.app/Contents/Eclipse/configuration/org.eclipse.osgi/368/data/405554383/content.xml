@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?metadataRepository version='1.2.0'?>
+<repository name='update site: http://www.caucho.com/eclipse/' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1'>
+  <properties size='2'>
+    <property name='p2.timestamp' value='1603800057960'/>
+    <property name='site.checksum' value='3830030018'/>
+  </properties>
+  <units size='5'>
+    <unit id='com.caucho.resin.eclipse' version='4.0.27' singleton='false'>
+      <update id='com.caucho.resin.eclipse' range='[0.0.0,4.0.27)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='4'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='com.caucho.resin.eclipse' version='4.0.27'/>
+        <provided namespace='osgi.bundle' name='com.caucho.resin.eclipse' version='4.0.27'/>
+        <provided namespace='osgi.identity' name='com.caucho.resin.eclipse' version='4.0.27'>
+          <properties size='1'>
+            <property name='type' value='osgi.bundle'/>
+          </properties>
+        </provided>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='com.caucho.resin.eclipse' version='4.0.27'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: com.caucho.resin.eclipse&#xA;Bundle-Version: 4.0.27&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='com.caucho.resin.eclipse.feature.group' version='4.0.27' singleton='false'>
+      <update id='com.caucho.resin.eclipse.feature.group' range='[0.0.0,4.0.27)' severity='0'/>
+      <properties size='5'>
+        <property name='org.eclipse.equinox.p2.name' value='Resin (Java EE Web Profile) Server'/>
+        <property name='org.eclipse.equinox.p2.description' value='Resin Eclipse Plugin based on WebTools Generic Server.'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='http://www.caucho.com/'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Caucho Technology, Inc.'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='com.caucho.resin.eclipse.feature.group' version='4.0.27'/>
+      </provides>
+      <requires size='16'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.swt' range='3.6.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jface' range='3.6.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.wst.server.ui' range='1.1.203'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.resources' range='3.6.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui.browser' range='3.3.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui.workbench' range='3.6.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jst.server.core' range='1.2.101'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jst.server.generic.core' range='1.0.606'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jst.server.generic.ui' range='1.0.505'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.wst.common.project.facet.ui' range='1.4.100'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.wst.server.core' range='1.0.102'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.debug.core' range='3.6.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='com.caucho.common' range='[4.0.27,4.0.27]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='com.caucho.resin.eclipse' range='[4.0.27,4.0.27]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='com.caucho.resin.eclipse.feature.jar' range='[4.0.27,4.0.27]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license>
+          Copyright (c) 1998-2009 Caucho Technology -- all rights reserved&#xA;&#xA;This file is part of Resin(R) Open Source&#xA;&#xA;Each copy or derived work must preserve the copyright notice and this&#xA;notice unmodified.&#xA;&#xA;Resin Open Source is free software; you can redistribute it and/or modify&#xA;it under the terms of the GNU General Public License as published by&#xA;the Free Software Foundation; either version 2 of the License, or&#xA;(at your option) any later version.&#xA;&#xA;Resin Open Source is distributed in the hope that it will be useful,&#xA;but WITHOUT ANY WARRANTY; without even the implied warranty of&#xA;MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE, or any warranty&#xA;of NON-INFRINGEMENT.  See the GNU General Public License for more&#xA;details.&#xA;&#xA;You should have received a copy of the GNU General Public License&#xA;along with Resin Open Source; if not, write to the&#xA;&#xA;  Free Software Foundation, Inc.&#xA;  59 Temple Place, Suite 330&#xA;  Boston, MA 02111-1307  USA
+        </license>
+      </licenses>
+      <copyright>
+        Copyright (c) 1998-2009 Caucho Technology -- all rights reserved&#xA;&#xA;This file is part of Resin(R) Open Source&#xA;&#xA;Each copy or derived work must preserve the copyright notice and this&#xA;notice unmodified.&#xA;&#xA;Resin Open Source is free software; you can redistribute it and/or modify&#xA;it under the terms of the GNU General Public License as published by&#xA;the Free Software Foundation; either version 2 of the License, or&#xA;(at your option) any later version.&#xA;&#xA;Resin Open Source is distributed in the hope that it will be useful,&#xA;but WITHOUT ANY WARRANTY; without even the implied warranty of&#xA;MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE, or any warranty&#xA;of NON-INFRINGEMENT.  See the GNU General Public License for more&#xA;details.&#xA;&#xA;You should have received a copy of the GNU General Public License&#xA;along with Resin Open Source; if not, write to the&#xA;&#xA;  Free Software Foundation, Inc.&#xA;  59 Temple Place, Suite 330&#xA;  Boston, MA 02111-1307  USA
+      </copyright>
+    </unit>
+    <unit id='com.caucho.resin.eclipse.feature.jar' version='4.0.27'>
+      <properties size='4'>
+        <property name='org.eclipse.equinox.p2.name' value='Resin (Java EE Web Profile) Server'/>
+        <property name='org.eclipse.equinox.p2.description' value='Resin Eclipse Plugin based on WebTools Generic Server.'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='http://www.caucho.com/'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Caucho Technology, Inc.'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='com.caucho.resin.eclipse.feature.jar' version='4.0.27'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='com.caucho.resin.eclipse' version='4.0.27'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='com.caucho.resin.eclipse' version='4.0.27'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size='1'>
+        <license>
+          Copyright (c) 1998-2009 Caucho Technology -- all rights reserved&#xA;&#xA;This file is part of Resin(R) Open Source&#xA;&#xA;Each copy or derived work must preserve the copyright notice and this&#xA;notice unmodified.&#xA;&#xA;Resin Open Source is free software; you can redistribute it and/or modify&#xA;it under the terms of the GNU General Public License as published by&#xA;the Free Software Foundation; either version 2 of the License, or&#xA;(at your option) any later version.&#xA;&#xA;Resin Open Source is distributed in the hope that it will be useful,&#xA;but WITHOUT ANY WARRANTY; without even the implied warranty of&#xA;MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE, or any warranty&#xA;of NON-INFRINGEMENT.  See the GNU General Public License for more&#xA;details.&#xA;&#xA;You should have received a copy of the GNU General Public License&#xA;along with Resin Open Source; if not, write to the&#xA;&#xA;  Free Software Foundation, Inc.&#xA;  59 Temple Place, Suite 330&#xA;  Boston, MA 02111-1307  USA
+        </license>
+      </licenses>
+      <copyright>
+        Copyright (c) 1998-2009 Caucho Technology -- all rights reserved&#xA;&#xA;This file is part of Resin(R) Open Source&#xA;&#xA;Each copy or derived work must preserve the copyright notice and this&#xA;notice unmodified.&#xA;&#xA;Resin Open Source is free software; you can redistribute it and/or modify&#xA;it under the terms of the GNU General Public License as published by&#xA;the Free Software Foundation; either version 2 of the License, or&#xA;(at your option) any later version.&#xA;&#xA;Resin Open Source is distributed in the hope that it will be useful,&#xA;but WITHOUT ANY WARRANTY; without even the implied warranty of&#xA;MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE, or any warranty&#xA;of NON-INFRINGEMENT.  See the GNU General Public License for more&#xA;details.&#xA;&#xA;You should have received a copy of the GNU General Public License&#xA;along with Resin Open Source; if not, write to the&#xA;&#xA;  Free Software Foundation, Inc.&#xA;  59 Temple Place, Suite 330&#xA;  Boston, MA 02111-1307  USA
+      </copyright>
+    </unit>
+    <unit id='com.caucho.common' version='4.0.27' singleton='false'>
+      <update id='com.caucho.common' range='[0.0.0,4.0.27)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='4'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='com.caucho.common' version='4.0.27'/>
+        <provided namespace='osgi.bundle' name='com.caucho.common' version='4.0.27'/>
+        <provided namespace='osgi.identity' name='com.caucho.common' version='4.0.27'>
+          <properties size='1'>
+            <property name='type' value='osgi.bundle'/>
+          </properties>
+        </provided>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='com.caucho.common' version='4.0.27'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: com.caucho.common&#xA;Bundle-Version: 4.0.27&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='http://www.caucho.com/eclipse/site.xml.org.eclipse.wst.server.core.serverAdapter' version='1.0.0.78-7qcKW1Lh'>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='Resin Application Server Adapter'/>
+        <property name='org.eclipse.equinox.p2.type.category' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='http://www.caucho.com/eclipse/site.xml.org.eclipse.wst.server.core.serverAdapter' version='1.0.0.78-7qcKW1Lh'/>
+      </provides>
+      <requires size='1'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='com.caucho.resin.eclipse.feature.group' range='[4.0.27,4.0.27]'/>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+    </unit>
+  </units>
+</repository>

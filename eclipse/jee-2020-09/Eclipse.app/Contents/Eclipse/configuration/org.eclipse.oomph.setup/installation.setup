@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<setup:Installation
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:setup="http://www.eclipse.org/oomph/setup/1.0"
+    xmlns:setup.p2="http://www.eclipse.org/oomph/setup/p2/1.0"
+    name="installation">
+  <setupTask
+      xsi:type="setup.p2:P2Task"
+      excludedTriggers="STARTUP MANUAL"
+      label="JRE 14.0.2">
+    <annotation
+        source="http://www.eclipse.org/oomph/setup/JRE"/>
+    <requirement
+        name="org.eclipse.justj.openjdk.hotspot.jre.full.feature.group"/>
+    <repository
+        url="https://download.eclipse.org/justj/jres/14/updates/release/14.0.2"/>
+    <description>
+      Contains the plug-ins and fragments for the OpenJDK Hotspot JRE Complete.
+      Provides the complete set of modules of the JDK, excluding incubators.
+    </description>
+  </setupTask>
+  <productVersion
+      href="index:/org.eclipse.setup#//@productCatalogs[name='org.eclipse.products']/@products[name='epp.package.jee']/@versions[name='2020-09']"/>
+</setup:Installation>

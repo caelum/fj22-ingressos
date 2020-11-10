@@ -1,0 +1,9 @@
+INDEX VERSION 1.131
+/Users/daniele/eclipse/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/4118561882.index
+/fj21-agenda/src
+/Users/daniele/eclipse/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/409742058.index
+/fj21-tarefas/src
+/Users/daniele/eclipse/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1226679184.index
+/fj21-tarefas/src
+/Users/daniele/eclipse/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2707024447.index
+/fj21-agenda/src
