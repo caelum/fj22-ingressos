@@ -1,0 +1,2 @@
+# We do not want capability jars pack200'd (they are tiny, no java, and fetched easier as jars)
+jarprocessor.exclude.pack=true

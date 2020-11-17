@@ -1,0 +1,99 @@
+body {
+  font-family: "arial", sans-serif;
+	padding-top: 20px;
+}
+
+body>a {
+	background-color: #eef;
+	margin-top: 3px;
+	display: inline-block;
+	padding: 3px;
+	border: solid #aaf;
+	border-radius: 10px;
+	text-decoration: none;
+}
+
+body>a:hover {
+	background-color: #559;
+	color: white;
+}
+
+body table tr:hover {
+	background-color: #cfc;
+}
+
+h1,h2,h3 {
+	text-shadow: 2px 1px 5px grey;
+}
+
+input, textarea {
+	background-color: #eef;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	padding: 2px 5px;
+}
+
+input[type=submit] {
+	background: #eef;
+	box-shadow: 0 1px 5px #333;
+	border: 0;
+	padding: 7px;
+	border: solid #aaf;
+	border-radius: 10px;
+}
+
+input[type=submit]:hover {
+	background-color: #559;
+	color: white;
+}
+
+span[id*=errors] {
+	color: red;
+	border: 3px solid #ff0000;
+	margin: 3px 0px;
+	display: inline-block;
+}
+
+table {
+	border-collapse: collapse;
+	text-align: left;
+}
+
+table td {
+	padding: 3px 20px;
+}
+
+table th {
+	padding: 3px 20px;
+	background-color: #aaf;
+}
+
+table a {
+	letter-spacing: 2px;
+	font-size: 14px;
+}
+
+table a:hover {
+	color: red;
+}
+
+table tr:nth-child(2n) {
+	background-color: #eef;
+}
+
+select {
+	background: #eef;
+	box-shadow: 0 1px 5px #333;
+	border: 0;
+	border: solid #aaf;
+	border-radius: 4px;
+	margin-bottom: 5px;
+}
+
+option {
+	background: #aae;
+	box-shadow: 0 1px 5px #333;
+	border: 0;
+	border: solid #aaf;
+	border-radius: 4px;
+}

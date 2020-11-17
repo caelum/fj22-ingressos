@@ -1,0 +1,270 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: org.eclipse.wtp.epp.package.jee.intro;singleton:=
+ true
+Built-By: genie.webtools
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.ui
+ .intro,org.eclipse.swt,org.eclipse.jface,org.eclipse.ui.workbench
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-ActivationPolicy: lazy
+Eclipse-SourceReferences: scm:git:git://git.eclipse.org/gitroot/webtoo
+ ls/webtools.releng.git;path="plugins/org.eclipse.wtp.epp.package.jee.
+ intro";tag="R3_18";commitId=17958d876e7fdf19307d77310ac1c683c515a60e
+Bundle-Vendor: %pluginProvider
+Bundle-Name: %pluginName
+Bundle-Version: 1.3.0.v201902122017
+Bundle-Localization: plugin
+Created-By: Apache Maven 3.5.4
+Build-Jdk: 1.8.0_202
+
+Name: icons/wtp_icon_x48.gif
+SHA-256-Digest: 2U07aePT5pY2lA+1sQj2misgEQfqJF5PNL/NqbW/coY=
+
+Name: images/02e.png
+SHA-256-Digest: mNW0gHuzypOBdL5d1xvALmIiGePsAjSCfxAEUHbLGVg=
+
+Name: images/01.png
+SHA-256-Digest: 23l9npKJ3yEUfMiBuzxpWDvhERX6uFBIGN/XY2B5ScE=
+
+Name: plugin.xml
+SHA-256-Digest: MfubQG5icWeZnd+HOSGe1NGJ8FmgCDbvMWVJcldAIZw=
+
+Name: images/09c.png
+SHA-256-Digest: skhcwOtC598eCkFvfySyqUGCpl0ySDzPFkWewFeqmAE=
+
+Name: images/wtpx48.png
+SHA-256-Digest: NOaqDWwHC+N/aiyQmUb4To4QbGtAr9UFUkxWH5uWjr8=
+
+Name: images/04b.png
+SHA-256-Digest: 5RBkQla4R4nhupkQeSeBQ5Goy/NFiObll19flD3+k1c=
+
+Name: images/03d.png
+SHA-256-Digest: 2EQ+fe1ajhVaEU0wQaw2takLxbUpe6s5VAFr/A6nOeg=
+
+Name: images/10.png
+SHA-256-Digest: c8MiAEYtSuhIkBr04h5l2AjgE07c03gSUMzt/hc9aTg=
+
+Name: images/bg.png
+SHA-256-Digest: wfKIcbs9vDW/YMk/C6sFJk8Oye+n1BPXPWsHL6mOk+E=
+
+Name: images/13a.png
+SHA-256-Digest: bAt41X7D+n6BqJYB+JkzVzhgbC0nPw3HzVwxlnBWQXs=
+
+Name: images/02h_o.png
+SHA-256-Digest: 1adcvnbs2CwjVO2U34GamBkGjNYHLbwSMa3AAERRZ1I=
+
+Name: images/13b.png
+SHA-256-Digest: SNR3pFEvMH3UHxZxg+H6/V/TapslFoKdQ6n7jSSd0UY=
+
+Name: images/09b.png
+SHA-256-Digest: rCIFk20byt7mgq8kmck/nMRWolCVlEA9fl17z9R78To=
+
+Name: images/03a-rightbottom.png
+SHA-256-Digest: twIN7xhJ50XsM5yJ9bjMaoEC6tdRYxMfDciVe7NxUks=
+
+Name: build.properties
+SHA-256-Digest: OV6LcwM6GnX6tPZAdWrnqq0WhhcJUd+tzjNXctC6/oA=
+
+Name: plugin.properties
+SHA-256-Digest: ygY4GPAL37JElsQF3T4GgwJRGlj4vibHo5vnFr8as9c=
+
+Name: images/05b.png
+SHA-256-Digest: UGbvOkywFBdIssGqh+hSWKnnWedCfSm4wCJEEzTwl1o=
+
+Name: images/09a.png
+SHA-256-Digest: FKXJphXVnQGpqHsgRh5HpZ2Ic8NbM3CDWwTvOO+vt+E=
+
+Name: images/02f.png
+SHA-256-Digest: n+n3jWm4HtBRTzD3THJJYmWHEW393CsMvGfuG9cQvpQ=
+
+Name: tutorialsExtension.xml
+SHA-256-Digest: nhr2f8Yu+T4T08xtOMd+u+E4hoPJ7IVhp1PuRtkqfHc=
+
+Name: icons/enterprise.png
+SHA-256-Digest: IzQPieM24JXh4lU6iklpgGZZU8amOgYFwqO60p7GyIM=
+
+Name: images/11a.png
+SHA-256-Digest: qy4r63hkVo09ZIETGgaUMU5vqhPlW4UszD1bzX7DouE=
+
+Name: images/05b_o.png
+SHA-256-Digest: oPTBdZitThIqTk9U7mr7DqupDDIMUhYA0f/cj34RWig=
+
+Name: images/12.png
+SHA-256-Digest: kzefZZ0MpTQTwK1ULPFRKQoEMbfScvJMM+Ujla0I/5o=
+
+Name: images/11b.png
+SHA-256-Digest: +AHp01Thyo6IA8kmNf/Fnb8YyBCj//mkgtzd/5vQLCY=
+
+Name: images/02g_o.png
+SHA-256-Digest: cIZFWPeoC6HZ/57+x6N9rzIbSW0Z/+xR+ChEQocnGG4=
+
+Name: images/02g.png
+SHA-256-Digest: GoxSPvA+YF4jOAmwzC1np7k6MIEMxb/AZh8CiW3SK4g=
+
+Name: images/02d_o.png
+SHA-256-Digest: WIpqoAiTwld/6OG5C/sy8KXbVBWGbpQmufqF5EcVstQ=
+
+Name: icons/wtp_icon_x32.gif
+SHA-256-Digest: x0NJRD+r6dmnxZn7UIj/3YTIeE3OLCb8eaNEu5ksULA=
+
+Name: images/03a-leftbottom.png
+SHA-256-Digest: aq8NFSAf7Bu2FO1P1hgfiic/qp36uKoRPwAGJt0Dxw4=
+
+Name: images/08.png
+SHA-256-Digest: Xo4e6mALWI+CpnpXbkZqO/FCiVw7q8L58yeQng1x1cw=
+
+Name: images/03b.png
+SHA-256-Digest: mFIABiAGFQHg5YkcNrDbDBUycjnlK6OzKW/sz5F7ksE=
+
+Name: newsExtension.xml
+SHA-256-Digest: d0WXnBN2l5ZpAF/Ilhv+xHe3a7ofcLNUVJ0bVUVDbU8=
+
+Name: images/09b_o.png
+SHA-256-Digest: b5lT1URDy7LXbPMQDUBt/f8AoY/Kges69Ed18mkhAFc=
+
+Name: images/02i.png
+SHA-256-Digest: sRuYbuYGsrzmnFq3nx/Qlo4DiTchywuXb/at5KsWspE=
+
+Name: introContent.xml
+SHA-256-Digest: RVcVD9c6c1JbhgzxxlsK4a6bL/1ZU8oasSdYIdCz/7E=
+
+Name: images/07b_o.png
+SHA-256-Digest: h2OPR5WQn15DvukMO3TLy/ykIptZwLc82uWOmz6mLf0=
+
+Name: images/03c.png
+SHA-256-Digest: Is6dwai+mmNLnzYBtks8+SO7tYAc+2gb3V4r9DCDQQ8=
+
+Name: images/11c.png
+SHA-256-Digest: GhwHiUgo+tMXNeZZiz40onYrH7Z6PePxn3eSm2NWDBY=
+
+Name: images/02h.png
+SHA-256-Digest: M3hqSUuyR+yd/7/Ti47I7yULQNhSbfF0IP+LZUK2FTc=
+
+Name: icons/embedded.png
+SHA-256-Digest: Zr9UoGZHipRtK8rz93mDJlM8PPBTGaHiVsnCL5mqiaM=
+
+Name: icons/wtp_icon_x16.gif
+SHA-256-Digest: MOb5L8DpNh4uIm9xQ8joBkw0t1RSqQlmXAcD4ut2Nrs=
+
+Name: images/wtpx48_hov.png
+SHA-256-Digest: nj+vCQB3GYRRJkRn1qCfvIjV0cCZv0ao4k5H9S/AmzU=
+
+Name: images/06.png
+SHA-256-Digest: UvKq1bt6QvJPsicDHsSumIg4nGzY87n3fdoIUcYmwg4=
+
+Name: META-INF/maven/org.eclipse.webtools.releng/org.eclipse.wtp.epp.p
+ ackage.jee.intro/pom.properties
+SHA-256-Digest: LlMIvMclgWr8+ewTrN9sxdQRIRhVV6ZVGnBIzcZNP5o=
+
+Name: icons/wtp_icon_x16B.gif
+SHA-256-Digest: ymXNKMLGnjP1ZvuYF69z7gAV1BZZj7pTISlOzK49WZc=
+
+Name: images/15b.png
+SHA-256-Digest: xLpeSNdcQKhZCI0CvKs2hb3rk+4iNro8X0fi7pjZf44=
+
+Name: images/14.png
+SHA-256-Digest: a52TwaguICJfMzfyNY8eOEyyLWdE9sQXo9mwQTvXZi0=
+
+Name: icons/af.png
+SHA-256-Digest: C9w4qkFGaOHRfVsPWd4OcZY5kg3bDCKMPvKVbLBnbmg=
+
+Name: images/07a.png
+SHA-256-Digest: xdZyLgoLPdCl6BeBJX2sVRoEl+3l9im/Ry0EEVE5fvQ=
+
+Name: META-INF/maven/org.eclipse.webtools.releng/org.eclipse.wtp.epp.p
+ ackage.jee.intro/pom.xml
+SHA-256-Digest: l3r2S21VX2PmKgvE9AQez9oaKLSP9EtTFdf2u22wtgc=
+
+Name: splash.bmp
+SHA-256-Digest: /QRjn2h1LbR5GmmqoNJENuBS69C/A5MeEJz9K7bxsOk=
+
+Name: images/15c.png
+SHA-256-Digest: oP289V2xd0b3cs+H0otHvXekJoCAJ35gc1X7cEhZmNs=
+
+Name: images/03a-rightbottom_o.png
+SHA-256-Digest: ZepWnOGOVuK1sgY0898hHkMxxzNoiothfwzRCH6brYo=
+
+Name: images/03c_o.png
+SHA-256-Digest: x10XC/vncxpYF0PlAs+tTMaVLrjGYH6/n14wFBYXx9M=
+
+Name: images/02a.png
+SHA-256-Digest: 4i7O5c6M3JAPSME3KriBiR6A+hqLPug9+4c+nKgE+Z4=
+
+Name: images/03d-bottom.png
+SHA-256-Digest: mg9aMCSwnm8E4y6t6uV0EEC7XVxLRWOCaF7bUV+FU1E=
+
+Name: overviewExtension.xml
+SHA-256-Digest: OQfexhkFpaMwnEUgICyi1vPm9un+ehNJb62pkuQYLQc=
+
+Name: icons/rcp.png
+SHA-256-Digest: tZvZpjMcqzI/sRFabF8sbeX+uug/G6MWfi4sTax4THg=
+
+Name: images/02f_o.png
+SHA-256-Digest: 3/hsKQtQYgMJAG0c4lPF6u4243gix3vD6vMDYCWzQnQ=
+
+Name: images/07c.png
+SHA-256-Digest: 2atePRTAbWr5v70e48zdDaO7YmsPxWRdzXwysz9JZvQ=
+
+Name: content/root.html
+SHA-256-Digest: z7y2bbl89iXw+du6fAV2/AVwh2RBONkEW8WNxtXlLP0=
+
+Name: images/02b.png
+SHA-256-Digest: 6BAZMcZebZNz5wlL63bN3zOAn/y6/sHMY3wEEhmaeq4=
+
+Name: css/overview.css
+SHA-256-Digest: AMqDSug2XUeaqXWIAeukxyuR8HC7azWldEkKjgG7x6A=
+
+Name: images/03a-top.png
+SHA-256-Digest: +rnI95+yF9ezOgjzlPbjY3RbcPuuoSOrcSym0YEzF34=
+
+Name: images/13c.png
+SHA-256-Digest: osrKiSHIqYYSkt5OtCbC49ih7DR7U53Pml2P0OKEHVk=
+
+Name: about.html
+SHA-256-Digest: IMw9szV1ltjnx+V4JD6C5rigsaWZ9RJAq4JUYbuoflM=
+
+Name: images/11b_o.png
+SHA-256-Digest: Hvfaou4BfW1+L2xY4EaUGVWsrL06+KyFeym2RdWKQhY=
+
+Name: images/13b_o.png
+SHA-256-Digest: 139QAj0TOH++BOt4HrighMah3UWspGJzDD+RW1ttLfA=
+
+Name: images/02b_o.png
+SHA-256-Digest: +Y8a/cb0C26yKUK/URdApvWbS3j5/Qpf2jt24/YVyjQ=
+
+Name: images/02i_o.png
+SHA-256-Digest: qslAeXM8hz62sS+JVrinlpdBXiyN6iuer9Cc8LMrJvk=
+
+Name: images/15b_o.png
+SHA-256-Digest: do/Em6CJFhqANol4JrM7QHv2C0ay9oPyX0gJzGyUUdc=
+
+Name: images/05c.png
+SHA-256-Digest: P8pq/eDQqXSuxeztHdxsJatXBO/NCyPXuBopfONkTOY=
+
+Name: META-INF/eclipse.inf
+SHA-256-Digest: i3ipp6lqEl2EaR5ZctXOC/CxmqQpqddmVPBVYEjiNeM=
+
+Name: images/02c.png
+SHA-256-Digest: gv5a/xJ5Wihro68vOQQEVpbQfMsup7jIir+dsFDlBEE=
+
+Name: icons/languages.png
+SHA-256-Digest: 6oQcKZU0lFXGBjUSMGa1YW1fJZCwzsA54k0MnLtXG44=
+
+Name: images/15a.png
+SHA-256-Digest: MLQaVzgf5XF1EhDphwBIoIxwpNogWdpbs7ofz52+GWE=
+
+Name: images/back.png
+SHA-256-Digest: ik96fBhmP+PxC5hmQ1DAQsGQzBOn9+8dARCoRIvXW9o=
+
+Name: images/16.png
+SHA-256-Digest: rux7+k3dd8tG+/GBkIJjAYbLhIypXQ9ntzRCy1xnjd4=
+
+Name: images/07b.png
+SHA-256-Digest: XHqNMdj+KJxZgvcREjK9DvaPAsJCwul/Kb/kzR7QIjw=
+
+Name: images/02d.png
+SHA-256-Digest: IDsmHWWfJ8C9RKtIuJ7YyuK4avIXzNkgb83PAuZZP/8=
+
+Name: images/03c-bottom.png
+SHA-256-Digest: cdVwr6G39PnLTcBB2q2iXMegVr76nZxjpTcm213WdKQ=
+

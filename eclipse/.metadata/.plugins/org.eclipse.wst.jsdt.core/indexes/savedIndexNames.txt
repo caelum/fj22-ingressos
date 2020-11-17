@@ -1,0 +1,9 @@
+INDEX VERSION 1.4+/Users/daniele/eclipse/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+2478202361.index
+846922435.index
+1280228098.index
+666377535.index
+1510602085.index
+289831258.index
+3500846832.index
+3774515285.index

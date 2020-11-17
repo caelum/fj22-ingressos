@@ -1,0 +1,5 @@
+package br.com.caelum.tarefas.interceptor;
+
+public class AutorizadorInterceptor {
+
+}
