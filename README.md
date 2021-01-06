@@ -1,1 +1,8 @@
-Escrevendo um exemplo de uma descrição sobre mim
+# Setup Project
+
+## Maven Jetty
+
+```
+package jetty:run
+```
+
