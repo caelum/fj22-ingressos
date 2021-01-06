@@ -6,4 +6,3 @@
 ```
 package jetty:run
 ```
->>>>>>> 0cf8642 (Atualização README.md)
