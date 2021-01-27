@@ -53,7 +53,7 @@
         <dependency>
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-jpa</artifactId>
-            <version>1.10.6.RELEASE</version>
+            <version>1.11.23.RELEASE</version>
         </dependency>
 
         <dependency>
@@ -149,5 +149,12 @@
             </plugin>
         </plugins>
     </build>
+
+    <developers>
+        <developer>
+            <name>Alefh Sous</name>
+            <email>alefh.sousa@caelum.com.br</email>
+        </developer>
+    </developers>
 
 </project>
