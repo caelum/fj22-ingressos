@@ -1,8 +1,11 @@
 package br.com.caelum.ingresso.model.form;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
+
+import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.NotBlank;
 
@@ -10,51 +13,63 @@ import br.com.caelum.ingresso.model.Lugar;
 import br.com.caelum.ingresso.model.Sala;
 
 public class SalaForm {
-    private Integer salaId;
+	private Integer salaId;
 
-    @NotBlank
-    private String nome;
+	@NotBlank
+	private String nome;
 
-    private List<Lugar> lugares = new ArrayList<>();
+	private List<Lugar> lugares = new ArrayList<>();
 
-    public SalaForm() {
-    }
+	@NotNull
+	private BigDecimal preco;
 
-    public SalaForm(Sala sala) {
-        this.salaId = sala.getId();
-        this.nome = sala.getNome();
-        this.lugares = new ArrayList<>(sala.getLugares());
-    }
+	public BigDecimal getPreco() {
+		return preco;
+	}
 
-    public Integer getSalaId() {
-        return salaId;
-    }
+	public void setPreco(BigDecimal preco) {
+		this.preco = preco;
+	}
 
-    public void setSalaId(Integer salaId) {
-        this.salaId = salaId;
-    }
+	public SalaForm() {
+	}
 
-    public String getNome() {
-        return nome;
-    }
+	public SalaForm(Sala sala) {
+		this.salaId = sala.getId();
+		this.nome = sala.getNome();
+		this.lugares = new ArrayList<>(sala.getLugares());
+		this.preco = sala.getPreco();
+	}
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
+	public Integer getSalaId() {
+		return salaId;
+	}
 
-    public List<Lugar> getLugares() {
-        return lugares;
-    }
+	public void setSalaId(Integer salaId) {
+		this.salaId = salaId;
+	}
 
-    public void setLugares(List<Lugar> lugares) {
-        this.lugares = lugares;
-    }
+	public String getNome() {
+		return nome;
+	}
 
-    public Sala toSala() {
-        Sala sala = new Sala(this.nome);
-        sala.setId(this.salaId);
-        sala.setLugares(new HashSet<>(this.lugares));
-        return sala;
-    }
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public List<Lugar> getLugares() {
+		return lugares;
+	}
+
+	public void setLugares(List<Lugar> lugares) {
+		this.lugares = lugares;
+	}
+
+	public Sala toSala() {
+		Sala sala = new Sala(this.nome, this.preco);
+		sala.setId(this.salaId);
+		sala.setLugares(new HashSet<>(this.lugares));
+		return sala;
+	}
 
 }
